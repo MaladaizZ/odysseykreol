@@ -1,0 +1,38 @@
+    |                                             Get-ChildItem -Recurse -File |
+>> Where-Object {
+>>     $_.FullName -notmatch '\\(node_modules|\.next|\.git)\\'
+>> } |      
+>> Select-Object -ExpandProperty FullNameeykreol> 
+C:\Users\bmare\Documents\Odyssey\odysseykreol\.gitignore
+C:\Users\bmare\Documents\Odyssey\odysseykreol\AGENTS.md
+C:\Users\bmare\Documents\Odyssey\odysseykreol\CLAUDE.md
+C:\Users\bmare\Documents\Odyssey\odysseykreol\components.json
+C:\Users\bmare\Documents\Odyssey\odysseykreol\eslint.config.mjs
+C:\Users\bmare\Documents\Odyssey\odysseykreol\next-env.d.ts
+C:\Users\bmare\Documents\Odyssey\odysseykreol\next.config.ts
+C:\Users\bmare\Documents\Odyssey\odysseykreol\package-lock.json
+C:\Users\bmare\Documents\Odyssey\odysseykreol\package.json
+C:\Users\bmare\Documents\Odyssey\odysseykreol\postcss.config.mjs
+C:\Users\bmare\Documents\Odyssey\odysseykreol\README.md
+C:\Users\bmare\Documents\Odyssey\odysseykreol\tsconfig.json
+C:\Users\bmare\Documents\Odyssey\odysseykreol\app\favicon.ico
+C:\Users\bmare\Documents\Odyssey\odysseykreol\app\globals.css
+C:\Users\bmare\Documents\Odyssey\odysseykreol\app\layout.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\app\page.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\app\about\page.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\app\contact\page.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\components\layout\navabr.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\components\ui\button.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\odyssey_resume.md\odyssey_master_plan.md
+C:\Users\bmare\Documents\Odyssey\odysseykreol\odyssey_resume.md\odyssey_master_plan_v1.md
+C:\Users\bmare\Documents\Odyssey\odysseykreol\odyssey_resume.md\odyssey_resume.md
+C:\Users\bmare\Documents\Odyssey\odysseykreol\public\file.svg
+C:\Users\bmare\Documents\Odyssey\odysseykreol\public\globe.svg
+C:\Users\bmare\Documents\Odyssey\odysseykreol\public\next.svg
+C:\Users\bmare\Documents\Odyssey\odysseykreol\public\vercel.svg
+C:\Users\bmare\Documents\Odyssey\odysseykreol\public\window.svg
+C:\Users\bmare\Documents\Odyssey\odysseykreol\src\components\ui\button.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\src\components\ui\card.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\src\components\ui\input.tsx
+C:\Users\bmare\Documents\Odyssey\odysseykreol\src\lib\utils.ts
+PS C:\Users\bmare\Documents\Odyssey\odysseykreol> 

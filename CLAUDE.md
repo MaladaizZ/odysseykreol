@@ -1,0 +1,2 @@
+@AGENTS.md
+discussion avec chatgpt : https://chatgpt.com/uc/6ae392ca-b2b8-83ea-ac21-8f7793fe777d?utm_source=microsoft&utm_medium=paid_search&msclkid=b5025a18a82e1c3a2d6130fb3ae99941&c_agid=1180877478263416
