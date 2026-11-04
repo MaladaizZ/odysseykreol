@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Manrope, Source_Sans_3, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import  Navbar  from "@/components/layout/navabar"
+import  Navbar  from "@/components/layout/navabar";
+import Footer from "@/components/layout/footer";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -32,12 +33,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${manrope.variable} ${sourceSans3.variable} ${geistMono.variable} h-full antialiased`}
     >
 
-      <body className="min-h-full flex flex-col">
-        
+      <body className="min-h-full flex flex-col bg-(--odyssey-sand) text-(--odyssey-ocean)">
         <Navbar/>
-        {children}
-        
-        </body>
+          <div className="flex-1 flex flex-col justify-center items-center md:px-8 gap-4 w-full px-4 py-12 mx-auto">
+           {children} 
+          </div>
+        <Footer/>          
+      </body>
     </html>
   );
 }
