@@ -1,23 +1,25 @@
-import React from 'react';
 import Link from "next/link";
+import { obtenirSession } from "@/src/lib/session";
+import MenuNavigation from './menu-navigation';
 
 
 
 
-export default function Navbar() {
+export default async function Navbar() {
+   
+  const { utilisateur, administrateur } = await obtenirSession();
+
   return (
-    <nav className="navbar flex-wrap" aria-label="Navigation principale">
+    <nav className="navbar flex-wrap " aria-label="Navigation principale">
       <div className="navbar-logo">
          <Link href="/">Odyssée Kréyol</Link>
       </div>
 
-      <div className="navbar-links">
-        <Link href="/">Accueil</Link>
-        <Link href="/articles">Articles</Link>
-        <Link href="/about">À propos</Link>
-        <Link href="/contact">Contact</Link>
-
-      </div>
+        <MenuNavigation
+          connecte={Boolean(utilisateur)}
+          administrateur={administrateur}
+        />
+        
     </nav>
   )
 }

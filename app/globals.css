@@ -175,6 +175,43 @@
   gap: 24px;
 }
 
+
 .navbar-links a:hover {
   color: var(--odyssey-gold);
+}
+
+.navbar .bouton-menu-mobile {
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  color: inherit;
+  cursor: pointer;
+  }
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .navbar .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .navbar .navbar-links[data-ouvert="true"] {
+    display: flex;
+  }
+
+  .navbar .navbar-links a {
+    padding: 0.5rem;
+  }
 }

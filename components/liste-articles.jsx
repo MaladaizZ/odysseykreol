@@ -2,10 +2,9 @@
 
 import { useState } from "react";
 import ArticleCard from "@/components/article-card";
-import { articles } from "@/data/articles";
 import Link from "next/link";
 
-export default function ListeArticles() {
+export default function ListeArticles({articles}) {
   const [recherche, setRecherche] = useState("");
   
   //mettre la searchbar avec majuscule et ignorer les espaces.

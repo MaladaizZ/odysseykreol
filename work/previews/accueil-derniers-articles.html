@@ -1,0 +1,271 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<div id="odyssee-home-preview">
+  <div class="viz-row" aria-label="Format de l’aperçu">
+    <button class="btn" type="button" data-format="desktop" aria-pressed="true">Ordinateur</button>
+    <button class="btn" type="button" data-format="mobile" aria-pressed="false">Mobile</button>
+    <span class="text-small text-muted">Titres et résumés d’exemple</span>
+  </div>
+  <div class="odyssee-stage">
+    <div class="odyssee-product">
+      <nav class="odyssee-nav" aria-label="Navigation principale">
+        <a href="#" class="odyssee-logo">Odyssée Kréyol</a>
+        <button type="button" class="odyssee-menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="odyssee-preview-nav">☰</button>
+        <div id="odyssee-preview-nav" class="odyssee-links">
+          <a href="#">Accueil</a>
+          <a href="#odyssee-latest">Articles</a>
+          <a href="#">À propos</a>
+          <a href="#">Contact</a>
+          <a href="#">Inscription</a>
+          <a href="#">Connexion</a>
+        </div>
+      </nav>
+
+      <main class="odyssee-content">
+        <section class="odyssee-hero">
+          <h1>La Guadeloupe se raconte ici.</h1>
+          <p>Rencontre entre tradition et évasion</p>
+          <p class="odyssee-intro">Odyssée Kréyol est un espace pour lire et partager des articles sur la Guadeloupe. Culture, histoire, vie quotidienne et témoignages : découvrez les récits de celles et ceux qui font vivre le territoire.</p>
+          <a class="odyssee-primary" href="#">Découvrir Odyssée</a>
+          <a class="odyssee-secondary" href="#">Contact</a>
+        </section>
+
+        <section id="odyssee-latest" class="odyssee-latest" aria-labelledby="odyssee-latest-title">
+          <h2 id="odyssee-latest-title">Derniers articles</h2>
+          <p>Les dernières publications de la communauté.</p>
+          <div class="odyssee-latest-grid">
+            <a class="odyssee-article-link" href="#odyssee-selected" data-article="0">
+              <article class="odyssee-article">
+                <h3>Le gwoka, un patrimoine vivant</h3>
+                <p>Tambours, chants et danse : une pratique qui rassemble les générations et transmet la mémoire de la Guadeloupe.</p>
+              </article>
+            </a>
+            <a class="odyssee-article-link" href="#odyssee-selected" data-article="1">
+              <article class="odyssee-article">
+                <h3>Les marchés, lieux de rencontre</h3>
+                <p>Au fil des étals, des produits locaux et des échanges, une autre façon de raconter le quotidien guadeloupéen.</p>
+              </article>
+            </a>
+            <a class="odyssee-article-link" href="#odyssee-selected" data-article="2">
+              <article class="odyssee-article">
+                <h3>Paroles d’habitants : raconter son quartier</h3>
+                <p>Des souvenirs et des regards singuliers pour mieux connaître les lieux que nous partageons.</p>
+              </article>
+            </a>
+          </div>
+          <a class="odyssee-primary" href="#" data-all-articles>Voir tous les articles</a>
+        </section>
+
+        <section class="odyssee-discovery" aria-labelledby="odyssee-discovery-title">
+          <h2 id="odyssee-discovery-title">À découvrir</h2>
+          <p>Les randonnées à faire, les évènements du mois, le proverbe.</p>
+          <div class="odyssee-discovery-grid">
+            <article class="odyssee-article">
+              <h3>les randonnées</h3>
+              <p>Les randonnées à ne pas manquer sont bien évidemment la Soufrière mais pas pour débutant. La pointe des Châteaux est à faire absolument</p>
+            </article>
+            <article class="odyssee-article">
+              <h3>les lieux</h3>
+              <p>à faire même quand on est pas sportif</p>
+            </article>
+            <article class="odyssee-proverb">
+              <h3>Le proverbe :</h3>
+              <p><cite>« Bo dlanmè pa lwen »</cite> : veut dire la Lumiere est au bout du tunnel</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="odyssee-history" aria-labelledby="odyssee-history-title">
+          <h2 id="odyssee-history-title">Histoire Locale</h2>
+          <p>La Guadeloupe possède une histoire marquée par de nombreuses figures, notamment Solitude, symbole de résistance et de liberté. Son histoire, transmise à travers les générations, évoque pour moi la force des femmes guadeloupéennes : fanm doubout, fanm poto mitan.</p>
+        </section>
+      </main>
+
+      <footer class="odyssee-footer">
+        <nav class="odyssee-footer-nav" aria-label="Navigation de pied de page">
+          <a href="#">Odyssée Kréyol</a>
+          <div class="odyssee-footer-links">
+            <a href="#">Accueil</a><a href="#odyssee-latest">Articles</a><a href="#">À propos</a><a href="#">Contact</a>
+            <a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook" aria-hidden="true"></i></a>
+          </div>
+        </nav>
+        <p>© 2026 Odyssée Kréyol</p>
+      </footer>
+    </div>
+  </div>
+  <p id="odyssee-selected" class="text-small text-muted" role="status" aria-live="polite"></p>
+</div>
+
+<style>
+  #odyssee-home-preview > .viz-row { margin-bottom: 16px; }
+  #odyssee-home-preview > [role="status"]:not(:empty) { margin-top: 12px; }
+  #odyssee-home-preview .odyssee-stage {
+    width: 100%;
+    margin-inline: auto;
+    container: odyssee-preview / inline-size;
+  }
+  #odyssee-home-preview .odyssee-product {
+    --odyssee-ocean: #073B4C;
+    --odyssee-lagoon: #087E8B;
+    --odyssee-turquoise: #45B7B0;
+    --odyssee-gold: #E9C46A;
+    --odyssee-sand: #F4EBDD;
+    color-scheme: light;
+    background: var(--odyssee-sand);
+    color: var(--odyssee-ocean);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  #odyssee-home-preview .odyssee-product * { box-sizing: border-box; }
+  #odyssee-home-preview .odyssee-product h1,
+  #odyssee-home-preview .odyssee-product h2,
+  #odyssee-home-preview .odyssee-product h3,
+  #odyssee-home-preview .odyssee-product p { margin: 0; color: inherit; }
+  #odyssee-home-preview .odyssee-product h1,
+  #odyssee-home-preview .odyssee-product h2,
+  #odyssee-home-preview .odyssee-product h3 { font-family: "Manrope", sans-serif; }
+  #odyssee-home-preview .odyssee-product h1 { font-size: 36px; line-height: 1.15; font-weight: 400; }
+  #odyssee-home-preview .odyssee-product h2 { font-size: 24px; line-height: 1.35; font-weight: 600; }
+  #odyssee-home-preview .odyssee-product h3 { font-size: 16px; line-height: 1.5; font-weight: 600; }
+  #odyssee-home-preview .odyssee-product a { color: inherit; text-decoration: none; }
+  #odyssee-home-preview .odyssee-product a:focus-visible,
+  #odyssee-home-preview .odyssee-product button:focus-visible { outline: 3px solid var(--odyssee-gold); outline-offset: 3px; }
+  #odyssee-home-preview .odyssee-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: var(--odyssee-ocean);
+    color: var(--odyssee-sand);
+  }
+  #odyssee-home-preview .odyssee-logo { font-size: 24px; font-weight: 700; }
+  #odyssee-home-preview .odyssee-links { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
+  #odyssee-home-preview .odyssee-nav a:hover { color: var(--odyssee-gold); }
+  #odyssee-home-preview .odyssee-menu { display: none; min-width: 44px; min-height: 44px; border: 1px solid currentColor; border-radius: 8px; background: transparent; color: inherit; font: inherit; }
+  #odyssee-home-preview .odyssee-content { padding: 48px 32px; }
+  #odyssee-home-preview .odyssee-hero,
+  #odyssee-home-preview .odyssee-latest,
+  #odyssee-home-preview .odyssee-discovery,
+  #odyssee-home-preview .odyssee-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 1152px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 48px 32px;
+  }
+  #odyssee-home-preview .odyssee-hero h1 { text-align: center; }
+  #odyssee-home-preview .odyssee-intro { align-self: stretch; }
+  #odyssee-home-preview .odyssee-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: var(--odyssee-ocean);
+    color: var(--odyssee-sand) !important;
+    font-weight: 600;
+    text-align: center;
+  }
+  #odyssee-home-preview .odyssee-primary:hover { background: var(--odyssee-lagoon); }
+  #odyssee-home-preview .odyssee-secondary { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 10px; border: 1px solid color-mix(in srgb, var(--odyssee-ocean) 20%, transparent); border-radius: 8px; background: #fff; color: #171717 !important; font-size: 14px; font-weight: 600; }
+  #odyssee-home-preview .odyssee-latest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; width: 100%; }
+  #odyssee-home-preview .odyssee-discovery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: 100%; }
+  #odyssee-home-preview .odyssee-article-link { display: block; min-width: 0; border-radius: 8px; }
+  #odyssee-home-preview .odyssee-article-link:hover { outline: 2px solid var(--odyssee-lagoon); outline-offset: 3px; }
+  #odyssee-home-preview .odyssee-article { height: 160px; padding: 8px; border-radius: 8px; background: var(--odyssee-turquoise); overflow: hidden; }
+  #odyssee-home-preview .odyssee-article h3 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #odyssee-home-preview .odyssee-article p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  #odyssee-home-preview .odyssee-proverb { padding: 8px; border-radius: 8px; background: var(--odyssee-turquoise); }
+  #odyssee-home-preview .odyssee-history { border-top: 2px solid var(--odyssee-turquoise); border-radius: 16px 16px 0 0; }
+  #odyssee-home-preview .odyssee-footer { padding: 4px; background: var(--odyssee-ocean); color: var(--odyssee-sand); }
+  #odyssee-home-preview .odyssee-footer-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: 16px; }
+  #odyssee-home-preview .odyssee-footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+  #odyssee-home-preview .odyssee-footer > p { margin-top: 8px; text-align: center; font-size: 14px; }
+  @container odyssee-preview (max-width: 767px) {
+    #odyssee-home-preview .odyssee-nav { padding: 16px; }
+    #odyssee-home-preview .odyssee-menu { display: inline-flex; justify-content: center; align-items: center; }
+    #odyssee-home-preview .odyssee-links { display: none; width: 100%; flex-direction: column; align-items: stretch; gap: 8px; }
+    #odyssee-home-preview .odyssee-links[data-open="true"] { display: flex; }
+    #odyssee-home-preview .odyssee-links a { display: block; padding: 8px; }
+    #odyssee-home-preview .odyssee-content { padding: 48px 16px; }
+    #odyssee-home-preview .odyssee-hero,
+    #odyssee-home-preview .odyssee-latest,
+    #odyssee-home-preview .odyssee-discovery,
+    #odyssee-home-preview .odyssee-history { padding: 48px 16px; }
+    #odyssee-home-preview .odyssee-product h1 { font-size: 24px; line-height: 1.35; }
+    #odyssee-home-preview .odyssee-product h2 { font-size: 20px; }
+    #odyssee-home-preview .odyssee-latest > p,
+    #odyssee-home-preview .odyssee-discovery > p { text-align: center; }
+    #odyssee-home-preview .odyssee-latest-grid,
+    #odyssee-home-preview .odyssee-discovery-grid,
+    #odyssee-home-preview .odyssee-footer-nav { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("odyssee-home-preview");
+  const stage = root.querySelector(".odyssee-stage");
+  const formatButtons = root.querySelectorAll("[data-format]");
+  const menuButton = root.querySelector(".odyssee-menu");
+  const nav = root.querySelector("#odyssee-preview-nav");
+  const status = root.querySelector("#odyssee-selected");
+  const saved = window.openai?.widgetState?.privateContent;
+  let format = saved?.format === "mobile" ? "mobile" : "desktop";
+
+  function renderFormat() {
+    stage.style.maxWidth = format === "mobile" ? "390px" : "none";
+    formatButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.format === format)));
+  }
+  renderFormat();
+
+  formatButtons.forEach((button) => button.addEventListener("click", () => {
+    format = button.dataset.format;
+    renderFormat();
+    window.openai?.setWidgetState?.({ modelContent: null, privateContent: { format } }).catch(() => {});
+  }));
+
+  function closeMenu() {
+    nav.dataset.open = "false";
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Ouvrir le menu");
+    menuButton.textContent = "☰";
+  }
+  menuButton.addEventListener("click", () => {
+    const open = menuButton.getAttribute("aria-expanded") !== "true";
+    nav.dataset.open = String(open);
+    menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+    menuButton.textContent = open ? "✕" : "☰";
+  });
+  root.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
+      closeMenu();
+      menuButton.focus();
+    }
+  });
+  root.querySelectorAll(".odyssee-product a").forEach((link) => link.addEventListener("click", (event) => {
+    event.preventDefault();
+    closeMenu();
+    if (link.hasAttribute("data-article")) {
+      status.textContent = `Cette carte ouvrira l’article « ${link.querySelector("h3").textContent} ».`;
+    } else if (link.hasAttribute("data-all-articles")) {
+      status.textContent = "Ce lien ouvrira la liste complète /articles.";
+    } else if (link.getAttribute("href") === "#odyssee-latest") {
+      root.querySelector("#odyssee-latest").scrollIntoView({ behavior: "auto", block: "start" });
+    } else {
+      status.textContent = "Aperçu de l’accueil : la navigation du site reste inchangée.";
+    }
+  }));
+})();
+</script>
