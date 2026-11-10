@@ -33,6 +33,7 @@ export default function FormulaireArticle({
       <label htmlFor="titre">Titre</label>
       <input
         id="titre"
+        placeholder="Votre titre ici"
         name="titre"
         type="text"
         required
@@ -43,6 +44,7 @@ export default function FormulaireArticle({
       <label htmlFor="resume">Résumé</label>
       <textarea
         id="resume"
+        placeholder="Votre resumé ici"
         name="resume"
         required
         maxLength={LIMITES_ARTICLE.resume}
@@ -52,10 +54,11 @@ export default function FormulaireArticle({
       />
       <label htmlFor="contenu">Contenu</label>
       <p id="aide-contenu" className="text-sm">
-        Chaque ligne non vide sera affichée comme un paragraphe.
+        
       </p>
       <textarea
         id="contenu"
+        placeholder="Votre contenu ici"
         name="contenu"
         required
         maxLength={LIMITES_ARTICLE.contenu}

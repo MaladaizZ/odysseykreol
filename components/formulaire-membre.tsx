@@ -21,6 +21,7 @@ export default function FormulaireMembre({
       <label htmlFor="email-membre">Adresse e-mail</label>
       <input
         id="email-membre"
+        placeholder="Votre mail ici"
         name="email"
         type="email"
         autoComplete="email"
@@ -32,11 +33,10 @@ export default function FormulaireMembre({
 
       <label htmlFor="mot-de-passe-membre">Nouveau mot de passe</label>
       <p id="aide-mot-de-passe-membre" className="text-sm">
-        Laisse ce champ vide pour conserver le mot de passe actuel. Sinon, saisis
-        entre 12 et 128 caractères.
       </p>
       <input
         id="mot-de-passe-membre"
+        placeholder="Votre mot de passe ici"
         name="motDePasse"
         type="password"
         autoComplete="new-password"

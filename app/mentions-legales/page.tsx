@@ -11,8 +11,7 @@ export default function MentionsLegales() {
     <main className="mx-auto w-full max-w-3xl text-(--odyssey-ocean)">
       <h1 className="text-3xl font-semibold sm:text-4xl">Mentions légales</h1>
       <p className="mt-4 leading-relaxed">
-        Ces mentions sont en cours de préparation et doivent être complétées avant
-        l’ouverture publique du site.
+        Bievenue sur la pages mentions légales.
       </p>
 
       <section className="mt-8" aria-labelledby="editeur">
@@ -26,8 +25,8 @@ export default function MentionsLegales() {
           <p>
             Téléphone : <a className="underline" href="tel:+33769787297">07 69 78 72 97</a>
           </p>
-          <p>Numéro d’immatriculation et registre applicable : à compléter avant la mise en ligne.</p>
-          <p>Numéro de TVA intracommunautaire : à renseigner si applicable.</p>
+          <p>Numéro d’immatriculation et registre applicable : </p>
+          <p>Numéro de TVA intracommunautaire : </p>
         </div>
       </section>
 
@@ -39,8 +38,7 @@ export default function MentionsLegales() {
       <section className="mt-8" aria-labelledby="hebergement">
         <h2 id="hebergement" className="text-xl font-semibold">Hébergement</h2>
         <p className="mt-3 leading-relaxed">
-          Hébergeur prévu : Vercel. La dénomination exacte, l’adresse et le numéro
-          de téléphone de l’hébergeur sont à compléter après confirmation du contrat.
+          Hébergeur prévu : Vercel.
         </p>
       </section>
 

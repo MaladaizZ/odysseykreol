@@ -49,6 +49,7 @@ export default function ConnexionPage() {
         <label htmlFor="email">Adresse e-mail</label>
         <input
           id="email"
+          placeholder="Votre mail ici"
           name="email"
           type="email"
           autoComplete="email"
@@ -59,6 +60,7 @@ export default function ConnexionPage() {
         <label htmlFor="password">Mot de passe</label>
         <input
           id="password"
+          placeholder="Votre mot de passe ici"
           name="password"
           type="password"
           autoComplete="current-password"

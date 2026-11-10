@@ -59,7 +59,7 @@ export default async function Home() {
         <h1 className="text-center text-2xl md:text-4xl">
          La Guadeloupe se raconte ici.
         </h1>
-        <p>Rencontre entre tradition et évasion</p>
+        <p><i>Rencontre entre tradition et évasion</i></p>
         <p>Odyssée Kréyol est un espace pour lire et partager des articles sur la
           Guadeloupe. Culture, histoire, vie quotidienne et témoignages : découvrez
           les récits de celles et ceux qui font vivre le territoire.
@@ -67,9 +67,7 @@ export default async function Home() {
         <Link href="/about" className="bg-(--odyssey-ocean) text-(--odyssey-sand) hover:opacity-80 hover:scale-105 duration-200 py-3 px-6 rounded-lg font-semibold focus-visible:outline-2">
          Découvrir Odyssée
          </Link>
-         <Link href="/contact" className={buttonVariants({variant: "outline", size:"default"})}>
-         Contact
-         </Link>
+
       </section>
 
       <section
